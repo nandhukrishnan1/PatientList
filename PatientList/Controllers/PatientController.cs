@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using PatientList.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,9 +9,15 @@ namespace PatientList.Controllers
 {
     public class PatientController : Controller
     {
+        private readonly PatientDbContext _dbContext;
+        public PatientController(PatientDbContext dbContext)
+        {
+            _dbContext = dbContext;
+        }
         public IActionResult PatientList()
         {
-            return View();
+            var patientData = _dbContext.PatientDatas;
+            return View(patientData);
         }
     }
 }

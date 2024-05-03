@@ -1,97 +1,40 @@
 {
-  "PatientData": {
-    "PatientId": 9,
-    "PatientName": "Alex",
-    "Age": 71,
-    "DateOfBirth": "2000-09-09T10:10:10",
-    "Gender": "F",
-    "StudyData": [
-      {
-        "Status": [
-          "P",
-          1
-        ],
-        "StudyID": 9,
-        "StudyTime": "2000-09-09T10:10:10",
-        "AccessionNumber": 11,
-        "Flag": 1,
-        "Modality": "CT",
-        "Description": 1,
-        "NoOfImages": 1,
-        "RefferedPhysicianName": 1,
-        "SeriesData": [
-          {
-            "SeriesNo": 29,
-            "ReadOrUnread": 1,
-            "NoOfImage": 1,
-            "SeriesDateTime": "2111-09-09T10:10:10",
-            "Description": 1,
-            "PublishState": 1,
-            "Part": 1
-          },
-          {
-            "SeriesNo": 301,
-            "ReadOrUnread": 301,
-            "NoOfImage": 301,
-            "SeriesDateTime": "2112-09-09T10:10:10",
-            "Description": 301,
-            "PublishState": 301,
-            "Part": 301
-          },
-          {
-            "SeriesNo": 301,
-            "ReadOrUnread": 301,
-            "NoOfImage": 301,
-            "SeriesDateTime": "2113-09-09T10:10:10",
-            "Description": 301,
-            "PublishState": 301,
-            "Part": 301
-          }
-        ]
-      },
-      {
-        "Status": [
-          30,
-          301
-        ],
-        "StudyID": 666,
-        "StudyTime": "2114-09-09T10:10:10",
-        "AccessionNumber": 301,
-        "Flag": 301,
-        "Modality": "MR",
-        "Description": 301,
-        "NoOfImages": 301,
-        "RefferedPhysicianName": 301,
-        "SeriesData": [
-          {
-            "SeriesNo": 301,
-            "ReadOrUnread": 301,
-            "NoOfImage": 301,
-            "SeriesDateTime": "2115-09-09T10:10:10",
-            "Description": 301,
-            "PublishState": 301,
-            "Part": 301
-          },
-          {
-            "SeriesNo": 302,
-            "ReadOrUnread": 301,
-            "NoOfImage": 301,
-            "SeriesDateTime": "2116-09-09T10:10:10",
-            "Description": 301,
-            "PublishState": 301,
-            "Part": 301
-          },
-          {
-            "SeriesNo": 303,
-            "ReadOrUnread": 301,
-            "NoOfImage": 301,
-            "SeriesDateTime": "2117-09-09T10:10:10",
-            "Description": 301,
-            "PublishState": 301,
-            "Part": 301
-          }
-        ]
-      }
-    ]
-  }
+  "PatientData": [
+    {
+      "PatientId": 1,
+      "PatientName": "Apsima",
+      "StudyTime": "2000-09-09T10:10:10",
+      "StudyId": "57",
+      "Modality": "MR",
+      "ImageCount": "1000",
+      "Description": "Cardiac MR"
+    },
+    {
+      "PatientId": 2,
+      "PatientName": "Sanjay",
+      "StudyTime": "2000-09-09T10:10:10",
+      "StudyId": "100",
+      "Modality": "CT",
+      "ImageCount": "2863",
+      "Description": "Cardiac test data"
+    },
+    {
+      "PatientId": 3,
+      "PatientName": "Anjana",
+      "StudyTime": "2000-09-09T10:10:10",
+      "StudyId": "875",
+      "Modality": "PET",
+      "ImageCount": "3652",
+      "Description": "PET study"
+    },
+    {
+      "PatientId": 4,
+      "PatientName": "Nandhu",
+      "StudyTime": "2000-09-09T10:10:10",
+      "StudyId": "436",
+      "Modality": "CT",
+      "ImageCount": "128",
+      "Description": "Cardiac"
+    }
+  ]
 }
