@@ -21,7 +21,7 @@ namespace PatientList.Models
                 return;
             }
 
-            using (StreamReader r = new StreamReader(@"F:\L&D\PatientListDemo\PatientList\PatientList\Data\PatientData.json"))
+            using (StreamReader r = new StreamReader(@".\Data\PatientData.json"))
             {
                 string json = r.ReadToEnd();
                 var items = JsonConvert.DeserializeObject<Root>(json);
