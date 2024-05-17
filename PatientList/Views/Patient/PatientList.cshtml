@@ -57,6 +57,40 @@
             border: none;
             margin-left: 20px;
         }
+
+        .buttons:hover {
+            background-color: rgb(114, 114, 114);
+        }
+
+        .localDriveTextBox {
+            margin-left: 30px;
+            height:22px !important;
+        }
+
+        input[type=text] {
+            width: 220px;
+            height: 25px;
+        }
+
+        .visibilityCheckbox {
+            margin-left: 20px;
+            margin-top: 10px
+        }
+
+        .resetButton {
+            margin-left: 35px;
+            background-color: transparent;
+            border: none;
+        }
+
+        .resetButton:hover {
+            background-color: rgb(114, 114, 114);
+        }
+
+        .whiteLabel {
+            color: white;
+            margin-left: 15px;
+        }
     </style>
 </head>
 <body>
@@ -93,50 +127,66 @@
                 </table>
             </div>
             <div style="border: 1px solid; background-color: grey; height: 50%; width: 30%;">
+                <span class="whiteLabel">1. Select Local Target Drive / Remote DICOM Node</span><br />
+                <input type="text" class="localDriveTextBox" value="Local Drive"/><br />
+                <input type="checkbox" style="margin-left: 20px; margin-top: 50px" /><span>Enable Remote Nodes</span><br />
+                <span class="whiteLabel">2. Set Study List Filter</span><br />
+                <input type="button" value="Reset" class="resetButton"/><br />
                 <input type="checkbox" style="margin-left: 20px; margin-top: 50px" />
                 <select style="height: 25px;">
-                    <option>Paitent Name</option>
                     <option>Patient ID</option>
-                    <option>Gender</option>
-                    <option>Modality</option>
+                    <option>Paitent Name</option>
+                    <option>Study ID</option>
+                    <option>Accession Number</option>
+                    <option>Description</option>
+                    <option>Patient Other ID</option>
+                    <option>Institution Name</option>
+                    <option>Flag: Review Status</option>
+                    <option>Flag: Status</option>
                 </select>
                 <input type="text" style="width: 220px; height: 25px;" /><br />
 
-                <input type="checkbox" style="margin-left: 20px; margin-top: 10px" />
+                <input type="checkbox" class="visibilityCheckbox" />
                 <select style="height: 25px;">
-                    <option>Paitent Name</option>
                     <option>Patient ID</option>
-                    <option>Gender</option>
-                    <option>Modality</option>
+                    <option>Paitent Name</option>
+                    <option>Study ID</option>
+                    <option>Accession Number</option>
+                    <option>Description</option>
+                    <option>Patient Other ID</option>
+                    <option>Institution Name</option>
+                    <option>Flag: Review Status</option>
+                    <option>Flag: Status</option>
                 </select>
                 <input type="text" style="width: 220px; height: 25px;" /><br />
 
-                <input type="checkbox" style="margin-left: 20px; margin-top: 10px" />
-                <select style="height: 25px;">
-                    <option>Paitent Name</option>
-                    <option>Patient ID</option>
-                    <option>Gender</option>
-                    <option>Modality</option>
-                </select>
-                <input type="text" style="width: 220px; height: 25px;" /><br />
+                <input type="checkbox" class="visibilityCheckbox" />
+                <span>Date 1:</span>
+                <input type="text" style="margin-left: 107px;" /><br />
 
-                <input type="checkbox" style="margin-left: 20px; margin-top: 10px" />
-                <select style="height: 25px;">
-                    <option>Paitent Name</option>
-                    <option>Patient ID</option>
-                    <option>Gender</option>
-                    <option>Modality</option>
-                </select>
-                <input type="text" style="width: 220px; height: 25px;" /><br />
+                <input type="checkbox" class="visibilityCheckbox"/>
+                <span>Date 2:</span>
+                <input type="text" style="margin-left: 107px;" /><br />
 
-                <input type="checkbox" style="margin-left: 20px; margin-top: 10px" />
-                <select style="height: 25px;">
-                    <option>Paitent Name</option>
-                    <option>Patient ID</option>
-                    <option>Gender</option>
-                    <option>Modality</option>
-                </select>
-                <input type="text" style="width: 220px; height: 25px;" />
+                <input type="checkbox" class="visibilityCheckbox" />
+                <span>Modality</span>
+                <select style="height: 25px; margin-left: 95px;">
+                    <option>All</option>
+                    <option>CT</option>
+                    <option>MR</option>
+                    <option>CR</option>
+                    <option>DX</option>
+                    <option>US</option>
+                    <option>XA</option>
+                    <option>PT</option>
+                    <option>NM</option>
+                    <option>RF</option>
+                    <option>SC</option>
+                    <option>DR</option>
+                    <option>OT</option>
+                    <option>RG</option>
+                </select><br />
+
                 <input type="button" value="Update Study List" style="margin-top:30px; width: 300px; margin-left: 80px; color: blue" /><br />
                 <input type="button" value="Retrieve Study" style="margin-top: 15px; width: 300px; margin-left: 80px; color: blue; margin-bottom: 9px;" />
             </div>
